@@ -1,6 +1,10 @@
 import "./App.css";
+import Actor from "./ConditionalRendaring/Actor";
+import Part1 from "./ConditionalRendaring/Part1";
 import Todolist from "./Todolist";
 function App() {
+
+  const actors = [ 'Sadia', 'Afrin','Maria']
   return (
     <>
       <h1></h1>
@@ -16,6 +20,17 @@ function App() {
       <Todolist task = "Learn react" position = "first" isDone={true} ></Todolist>
       <Todolist task = "Explore core Concept" position = "secondly" isDone={false} ></Todolist>
       <Todolist task = "try core concept" position = "third" isDone={true} ></Todolist>
+
+      <Part1 task="Learn react" position = "first" isDone={true} ></Part1>
+      <Part1 task = "Explore core Concept" position = "secondly" isDone={false} ></Part1>
+      <Part1 task = "try core concept" position = "third" isDone={true}></Part1>
+
+
+      <Actor name = {"Sadia Afrin Maria"}></Actor>
+
+      {
+        actors.map(actorName => <Actor name={actorName}></Actor>)
+      }
     </>
   );
 }
