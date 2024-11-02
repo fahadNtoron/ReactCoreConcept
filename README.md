@@ -13,3 +13,4 @@ Here I have practiced some core concept of REACT. Some of them are.
 Some basic knowledge:
     1. react is uniidirectional
     2. passed props can be changed by receiving component
+    3.We can write HTML like markup language in REACT componant
